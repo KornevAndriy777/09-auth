@@ -1,4 +1,4 @@
-export const SITE_URL = "https://08-zustand-alpha-nine.vercel.app";
+export const SITE_URL = "https://09-auth-lovat-delta.vercel.app";
 
 export const OG_IMAGE = {
   url: "https://ac.goit.global/fullstack/react/notehub-og-meta.jpg",
