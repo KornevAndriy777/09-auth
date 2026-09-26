@@ -27,9 +27,10 @@ export const metadata: Metadata = {
 
 interface RootLayoutProps {
   children: React.ReactNode;
+  modal: React.ReactNode;
 }
 
-export default function RootLayout({ children }: Readonly<RootLayoutProps>) {
+export default function RootLayout({ children, modal }: Readonly<RootLayoutProps>) {
   return (
     <html lang="en">
       <body className={roboto.variable}>
@@ -37,6 +38,7 @@ export default function RootLayout({ children }: Readonly<RootLayoutProps>) {
           <AuthProvider>
             <Header />
             {children}
+            {modal}
             <Footer />
           </AuthProvider>
         </TanStackProvider>
